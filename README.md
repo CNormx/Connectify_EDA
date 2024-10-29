@@ -26,34 +26,29 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 # Data Structure & Initial Checks
 
-The Social Buzz's main database structure consists of 7 tables: User, Profile, Location, Session, Content, Reaction, Reaction types
+The Social Buzz's main database structure consists of 7 tables: User, Profile, Location, Session, Content, Reaction, Reaction types.</br>
 Reaction, Content, and Reaction Types are our relevant data sets.
 We only need data that shows the content ID, category, content type, reaction type, and reaction score in order to answer the clients request for an analysis of their content categories showing the top 5 categories with the largest popularity.
 As explained in the data model [file], popularity is quantified by the Score given to each reaction type.
 
 A description of each table is as follows:
 - **Content:** Content
-ID: Unique ID of the content that was uploaded (automatically generated)
-User ID: Unique ID of a user that exists in the User table
-Type: A string detailing the type of content that was uploaded
+ID: Unique ID of the content that was uploaded (automatically generated)</br>
+Type: A string detailing the type of content that was uploaded</br>
 Category: A string detailing the category that this content is relevant to
-URL: Link to the location where this content is stored
 
 - **Reactions:**
-Content ID: Unique ID of a piece of content that was uploaded
-User ID: Unique ID of a user that exists in the User table who reacted to this piece of content
-Type: A string detailing the type of reaction this user gave
+Content ID: Unique ID of a piece of content that was uploaded</br>
+Type: A string detailing the type of reaction this user gave</br>
 Datetime: The date and time of this reaction
 
 - **ReactionTypes:**
-Type: A string detailing the type of reaction this user gave
-Sentiment: A string detailing whether this type of reaction is considered as positive, negative or neutral
+Type: A string detailing the type of reaction this user gave</br>
+Sentiment: A string detailing whether this type of reaction is considered as positive, negative or neutral</br>
 Score: This is a number calculated by Social Buzz that quantifies how “popular” each reaction is. A reaction type with a higher score
 should be considered as a more popular reaction.
 
-[Entity Relationship Diagram here]
-
-
+![image](https://github.com/CNormx/Accenture_analysis/blob/main/Accenture%20erd.JPG)
 
 # Executive Summary
 
