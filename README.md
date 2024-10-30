@@ -1,35 +1,35 @@
 # Project Background
-Social Buzz established in 2010 is a social media and content creation platform where content is at the forefront of user feeds. Currently the platform has 500 million active users monthly creating over 100,000 pieces of content daily. The client stated that scale is becoming a big problem of theirs and they are struggling to manage with the resources that they currently have. They are looking for help with the management of their data and journey at a larger size.
+Social Buzz established in 2010 is a social media and content creation platform where content is at the forefront of user feeds. Currently the platform has 500 million active users monthly creating over 100,000 pieces of content daily. The client stated the scale and rate at which their data is growing has become unmanagable for their internal staff and they are seeking help maintaing the best data practices while the company expands.
 
 Accenture was tasked with fufilling three requirements for this project:
 - **Audit of big data practice**
 - **Recommendations for IPO**
 - **An analysis of their content categories that highlights the top 5 categories with the largest aggregate popularity**
 
-The Data teams task is to analyze a data set with visualizations to understand the popularity of different content categories. A further understanding of their growing user base and the populartiy of features on the platform will shape the companies future, provide critical insights, and measure their successes in a clear tangible way.
+The Data Analytics team was specifically tasked with the analyzation of a sample data set along with visualizations to understand the popularity of different content categories. A further understanding of their growing user base and the populartiy of features on the platform will shape the companies future, provide critical insights, and measure their success in a clear tangible way.
 
 
 Insights and recommendations are provided on the following key areas:
 
-- **Category trend analysis -evaluation of the top categories:** 
-- **Category 2:** 
-- **Category 3:** 
-- **Category 4:** 
+- **Category trend analysis -evaluation of the top categories:**
+- **Top reaction types given to each individual category**
+- **During which months were the most post made and how many**
+- **What types of content were users most likely to post -Photo, Video, etc.**
 
 The SQL queries used to inspect and clean the data for this analysis can be found here [link].
 
-Targed SQL queries regarding various business questions can be found here [link].
+Targeted SQL queries regarding various business questions can be found here [link].
 
-An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
+An interactive Looker Studio dashboard used to report and explore catagorical trends can be found here [link](https://lookerstudio.google.com/reporting/53d58549-3809-4069-adff-772184dec9ac)
 
 
 
 # Data Structure & Initial Checks
 
-The Social Buzz's main database structure consists of 7 tables: User, Profile, Location, Session, Content, Reaction, Reaction types.</br>
+Social Buzz's main database structure consists of 7 tables: User, Profile, Location, Session, Content, Reaction, Reaction types.</br>
 Reaction, Content, and Reaction Types are our relevant data sets.
-We only need data that shows the content ID, category, content type, reaction type, and reaction score in order to answer the clients request for an analysis of their content categories showing the top 5 categories with the largest popularity.
-As explained in the data model [file], popularity is quantified by the Score given to each reaction type.
+We only need data that shows the `content ID`, `category`, `content type`, `reaction type`, and `reaction score` fields in order to answer the clients request for an analysis of their content categories showing the top 5 categories with the largest popularity measured by their score.
+As explained in the data model [file](https://github.com/CNormx/Accenture_analysis/tree/main/Social%20Buzz%20Briefs%20and%20Data%20Model), popularity is quantified by the score given to each `reaction type` which connect to the `reactions` table by the `type` field.
 
 A description of each table is as follows:
 - **Content:** Content
