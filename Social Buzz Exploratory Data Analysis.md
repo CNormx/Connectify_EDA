@@ -45,7 +45,7 @@ order by total_score DESC
 LIMIT 5;
 ```
 
-![Top 5 Categories.JPG](Top_5_Categories.jpg)
+![Top 5 Categories.JPG](https://github.com/CNormx/Accenture_analysis/blob/main/SQL%20Query/Top_5_Categories.jpg)
 
 ### How many reactions did the top category receive?
 
@@ -61,7 +61,7 @@ order by total_score DESC
 LIMIT 1;
 ```
 
-![number of reactions for top cat.JPG](number_of_reactions_for_top_cat.jpg)
+![number of reactions for top cat.JPG](https://github.com/CNormx/Accenture_analysis/blob/main/SQL%20Query/number_of_reactions_for_top_cat.jpg)
 
 ### Which reaction type has the highest total score for each category?
 
@@ -85,7 +85,7 @@ FROM type_scores
 	ORDER BY total_score DESC;
 ```
 
-![top reaction types by cat.JPG](top_reaction_types_by_cat.jpg)
+![top reaction types by cat.JPG](https://github.com/CNormx/Accenture_analysis/blob/main/SQL%20Query/top_reaction_types_by_cat.jpg)
 
 ### What content type is the most popular?
 
@@ -96,7 +96,7 @@ FROM "Accenture".content
 LIMIT 5;
 ```
 
-![top content type.JPG](top_content_type.jpg)
+![top content type.JPG](https://github.com/CNormx/Accenture_analysis/blob/main/SQL%20Query/top_content_type.jpg)
 
 ### During which month were the most posts created?
 
@@ -109,4 +109,4 @@ group by month, year
 ORDER BY counts desc;
 ```
 
-![monthly post count.JPG](monthly_post_count.jpg)
+![monthly post count.JPG](https://github.com/CNormx/Accenture_analysis/blob/main/SQL%20Query/monthly_post_count.jpg)
