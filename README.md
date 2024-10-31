@@ -16,11 +16,11 @@ Insights and recommendations are provided on the following key areas:
 - **During which months were the most post made and how many**
 - **What types of content were users most likely to post -Photo, Video, etc.**
 
-The SQL queries used to inspect and clean the data for this analysis can be found here [link].
+The functions and actions performed in Google Sheets used to inspect and clean the data for this analysis can be found here [link](https://github.com/CNormx/Accenture_analysis/blob/main/Social%20Buzz%20Data%20Quality%20Check%20and%20Clean.md).
 
-Targeted SQL queries regarding various business questions can be found here [link].
+Targeted SQL queries regarding various business questions can be found here [link](https://github.com/CNormx/Accenture_analysis/blob/main/Social%20Buzz%20Exploratory%20Data%20Analysis.md).
 
-An interactive Looker Studio dashboard used to report and explore catagorical trends can be found here [link](https://lookerstudio.google.com/reporting/53d58549-3809-4069-adff-772184dec9ac)
+An interactive Looker Studio dashboard used to report and explore catagorical trends can be found here [link](https://lookerstudio.google.com/reporting/53d58549-3809-4069-adff-772184dec9ac).
 
 
 
