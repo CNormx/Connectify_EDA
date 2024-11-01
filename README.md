@@ -27,7 +27,7 @@ An interactive Looker Studio dashboard for reporting and exploring categorical t
 Connectify's main database structure consists of 7 tables: User, Profile, Location, Session, Content, Reaction, Reaction types.</br>
 Our relevant datasets are Reaction, Content, and Reaction Types.
 To address the client's request for an analysis of their content categories—showing the top 5 categories with the largest popularity as measured by their score—we only need data that includes the `content ID`, `category`, `content type`, `reaction type`, and `reaction score` fields.
-As explained in the data model [file](https://github.com/CNormx/Accenture_analysis/tree/main/Social%20Buzz%20Briefs%20and%20Data%20Model), popularity is quantified by the score assigned to each `reaction type` which connects to the `reactions` table via the `type` field.
+As explained in the data model [file](https://github.com/CNormx/Connectify_EDA/tree/main/Connectify%20Briefs%20and%20Data%20Model), popularity is quantified by the score assigned to each `reaction type` which connects to the `reactions` table via the `type` field.
 
 A description of each table is as follows:
 - **Content:** Content
@@ -52,10 +52,10 @@ should be considered as a more popular reaction.
 
 ### Overview of Findings
 
-Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
+The top 5 user post categories were clearly defined and displayed Animals in the top spot with 1,897 posts. This accounted for 21.4% of the top 5 category popularity. Analysis of the reaction patterns across categories revealed distinct preferences which indicated the highest level of user engagement and emotional response. The following sections will explore additional views into the post categories showcasing features that resonate most strongly with our user base, while simultaneously highlighting areas primed for optimization to drive increased engagement and user satisfaction.</br>
+[link to full Dashboard](https://lookerstudio.google.com/s/gA_Uv2xolHs)
 
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
-
+![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/Connectify%20Dashboard%202.jpg)
 
 
 # Insights Deep Dive
