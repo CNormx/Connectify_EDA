@@ -1,4 +1,4 @@
-# Social Buzz Data Quality Check and Clean
+# Connectify Data Quality Check and Clean
 
 **Data Cleaning performed in Google Sheets:**
 
