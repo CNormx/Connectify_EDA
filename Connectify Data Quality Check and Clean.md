@@ -11,10 +11,12 @@ After uploading the files into Google Sheets, I viewed the data and checked for 
 - Non-critical columns were deleted: URL and User ID from the `Content` and `Reactions` tables, as they are not relevant primary or foreign keys for the metrics we need to create.
 - Type, Datetime, and Sentiment columns were kept for possible augmentation. We may want to analyze what time of day content performs best.
 - Found and replaced all quotation marks in the `Content` table's *Category* column.
-- Null search: Found 980 nulls in the `Reaction Type` table's 25,554 records. Since the nulls only accounted for **3%** of the total records, I decided to delete them entirely.
+- Null search: Found 980 nulls in the `Reaction Type` table's 25,554 records. Since the nulls only accounted for **3%** of the total records, I decided to delete them entirely.</br>
 
-**Formatting:** Changed 58 instances of "Studying" and 72 instances of "Animals" to lowercase using the `=ARRAYFORMULA(IF(LEN C2:C), LOWER(C2:C), ""))` function.  
+
+**Formatting:**</br> 
+- Renamed the `Type` column in the `Content` table to `Content Type` to distinguish it from the `Type` fields in the `Reactions` and `Reaction Types` tables.
+- Changed 58 instances of "Studying" and 72 instances of "Animals" to lowercase using the `=ARRAYFORMULA(IF(LEN C2:C), LOWER(C2:C), ""))` function.  
 
 ![LowerCap GSheets.JPG](https://github.com/CNormx/Accenture_analysis/blob/main/Google%20Sheets%20imgs/LowerCap%20GSheets.JPG)
 
-Renamed the `Type` column in the `Content` table to `Content Type` to distinguish it from the `Type` fields in the `Reactions` and `Reaction Types` tables.
