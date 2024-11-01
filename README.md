@@ -59,57 +59,30 @@ The top 5 user post categories were clearly defined and displayed Animals in the
 
 
 # Insights Deep Dive
-### Category 1:
+### Category trend analysis: Evaluation of the top categories:
+
+* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+
+![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/chart%20top%205.JPG)
+
+
+### Top reaction types for each individual category:
+
+* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+
+![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/chart%20cattypes.JPG)
+
+### Months with the highest number of posts and their respective counts:
 
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
   
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/chart%20months.JPG)
 
-[Visualization specific to category 1]
-
-
-### Category 2:
+### Most popular content types among users (e.g., photos, videos):
 
 * **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
 
-[Visualization specific to category 2]
-
-
-### Category 3:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 3]
-
-
-### Category 4:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 4]
-
+![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/chart%20contenttype.JPG)
 
 
 # Recommendations:
