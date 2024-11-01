@@ -14,9 +14,9 @@ Insights and recommendations are provided on the following key areas:
 - **Months with the highest number of posts and their respective counts**
 - **Most popular content types among users (e.g., photos, videos)**
 
-The functions and actions performed in Google Sheets to inspect and clean the data for this analysis can be found [here](https://github.com/CNormx/Accenture_analysis/blob/main/Social%20Buzz%20Data%20Quality%20Check%20and%20Clean.md).
+The functions and actions performed in Google Sheets to inspect and clean the data for this analysis can be found [here](https://github.com/CNormx/Connectify_EDA/blob/main/Connectify%20Data%20Quality%20Check%20and%20Clean.md).
 
-Targeted SQL queries addressing various business questions are available [here](https://github.com/CNormx/Accenture_analysis/blob/main/Social%20Buzz%20Exploratory%20Data%20Analysis.md).
+Targeted SQL queries addressing various business questions are available [here](https://github.com/CNormx/Connectify_EDA/blob/main/Connectify%20Exploratory%20Data%20Analysis.md).
 
 An interactive Looker Studio dashboard for reporting and exploring categorical trends can be accessed [here](https://lookerstudio.google.com/reporting/53d58549-3809-4069-adff-772184dec9ac).
 
@@ -53,60 +53,46 @@ should be considered as a more popular reaction.
 ### Overview of Findings
 
 The top 5 user post categories were clearly defined and displayed Animals in the top spot with 1,897 posts. This accounted for 21.4% of the top 5 category popularity. Analysis of the reaction patterns across categories revealed distinct preferences which indicated the highest level of user engagement and emotional response. The following sections will explore additional views into the post categories showcasing features that resonate most strongly with our user base, while simultaneously highlighting areas primed for optimization to drive increased engagement and user satisfaction.</br>
-[link to full Dashboard](https://lookerstudio.google.com/s/gA_Uv2xolHs)
+[link to Dashboard](https://lookerstudio.google.com/s/gA_Uv2xolHs)
 
-![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/Connectify%20Dashboard%202.jpg)
-
+![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/Connectify%20Dashboard%202.jpg)  
 
 # Insights Deep Dive
-### Category trend analysis: Evaluation of the top categories:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/chart%20top%205.JPG)
-
 
 ### Top reaction types for each individual category:
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* Analysis of the reaction patterns across categories revealed distinct preferences: the Technology category predominantly drew 'Adore' reactions, while 'Want' emerged as the primary response for Science-related content. Notably, the top-performing category Animals, consistently garnered 'Super Love' reactions, indicating each of the categories highest level of user engagement and emotional response.
 
 ![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/chart%20cattypes.JPG)
 
 ### Months with the highest number of posts and their respective counts:
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+* The dataset started in the month of May in 2020 and ended in June 2021. The resulting graph showed very little variation in the amount of user post throughout the year, with a high of 781 posts in 2021 occurring in the month of January. Correlating the amount of posts to traditional holiday seasonality patterns is difficult, as the second highest month of posts occurs in July 2020, with just 778 posts. 
   
 ![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/chart%20months.JPG)
 
 ### Most popular content types among users (e.g., photos, videos):
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
+* The results for the most popular content types resulted in a near tie, with Photo and Video coming out on top. 
 ![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/chart%20contenttype.JPG)
 
 
 # Recommendations:
 
-Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+Based on the insights and findings above, we would recommend the Connectify team to consider the following: 
 
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* **User Sentiment and Content Strategy:** The amount of 'Super Love' reactions in the Animal category indicates strong positive user sentiment. This data suggests potential for increased engagement through strategic partnerships with animal shelters, zoos, and conservations. Implementing an animal-centric campaign could leverage this affinity to drive platform growth and user interaction.
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* **Trends over time and Campaign Planning:** Examination of monthly post volume over a one-year period shows minimal fluctuation. It is recommended to continue monitoring these trends on monthly and quarterly bases to establish long-term patterns. The current data does not support seasonally targeted campaigns due to the lack of significant variation. Further marketing analysis is advised to inform future strategies.
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* **Content Type Optimization:** With photo and video content emerging as the dominant media types, prioritizing the enhancement of these formats is crucial. Focusing on improving the quality and delivery efficiency of photo and video content could significantly impact user retention and acquisition
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
+* **Reaction Nulls:** A 3% null reaction rate was observed, indicating a small subset of users who do not engage with certain posts. While this finding was not central to the current analysis, it presents an opportunity for future investigation. Tracking this metric over time could provide valuable insights into user engagement patterns and content relevance.
 
-
-# Assumptions and Caveats:
+# Caveats:
 
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
-* Assumption 1 (ex: missing country records were for customers based in the US, and were re-coded to be US citizens)
-  
-* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
-  
-* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)# Accenture_analysis
+* Since this sample dataset only covers a year, predictive charts could be made in order to see a better example of user trends and what to expect for the future
+ 
+* 3% of reaction post had null reactions which were excluded from the analysis
