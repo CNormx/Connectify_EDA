@@ -1,35 +1,33 @@
 # Project Background
-Social Buzz established in 2010 is a social media and content creation platform where content is at the forefront of user feeds. Currently the platform has 500 million active users monthly creating over 100,000 pieces of content daily. The client stated the scale and rate at which their data is growing has become unmanagable for their internal staff and they are seeking help maintaing the best data practices while the company expands.
+Connectify, established in 2010, is a social media and content creation platform where content takes center stage in user feeds. Currently, the platform boasts 500 million monthly active users, generating over 100,000 pieces of content daily. The client has expressed that the scale and rate at which their data is growing has become unmanageable for their internal staff. They are seeking assistance in maintaining best data practices as the company expands.
 
 Accenture was tasked with fufilling three requirements for this project:
 - **Audit of big data practice**
 - **Recommendations for IPO**
-- **An analysis of their content categories that highlights the top 5 categories with the largest aggregate popularity**
+- **Analysis of content categories, highlighting the top 5 with the largest aggregate popularity**
 
-The Data Analytics team was specifically tasked with the analyzation of a sample data set along with visualizations to understand the popularity of different content categories. A further understanding of their growing user base and the populartiy of features on the platform will shape the companies future, provide critical insights, and measure their success in a clear tangible way.
-
+The Data Analytics team was specifically tasked with analyzing a sample data set and creating visualizations to understand the popularity of different content categories. A deeper understanding of their growing user base and the popularity of platform features will shape the company's future, provide critical insights, and measure their success in a clear, tangible way.
 
 Insights and recommendations are provided on the following key areas:
+- **Category trend analysis: Evaluation of the top categories**
+- **Top reaction types for each individual category**
+- **Months with the highest number of posts and their respective counts**
+- **Most popular content types among users (e.g., photos, videos)**
 
-- **Category trend analysis -evaluation of the top categories:**
-- **Top reaction types given to each individual category**
-- **During which months were the most post made and how many**
-- **What types of content were users most likely to post -Photo, Video, etc.**
+The functions and actions performed in Google Sheets to inspect and clean the data for this analysis can be found [here](https://github.com/CNormx/Accenture_analysis/blob/main/Social%20Buzz%20Data%20Quality%20Check%20and%20Clean.md).
 
-The functions and actions performed in Google Sheets used to inspect and clean the data for this analysis can be found here [link](https://github.com/CNormx/Accenture_analysis/blob/main/Social%20Buzz%20Data%20Quality%20Check%20and%20Clean.md).
+Targeted SQL queries addressing various business questions are available [here](https://github.com/CNormx/Accenture_analysis/blob/main/Social%20Buzz%20Exploratory%20Data%20Analysis.md).
 
-Targeted SQL queries regarding various business questions can be found here [link](https://github.com/CNormx/Accenture_analysis/blob/main/Social%20Buzz%20Exploratory%20Data%20Analysis.md).
-
-An interactive Looker Studio dashboard used to report and explore catagorical trends can be found here [link](https://lookerstudio.google.com/reporting/53d58549-3809-4069-adff-772184dec9ac).
+An interactive Looker Studio dashboard for reporting and exploring categorical trends can be accessed [here](https://lookerstudio.google.com/reporting/53d58549-3809-4069-adff-772184dec9ac).
 
 
 
 # Data Structure & Initial Checks
 
-Social Buzz's main database structure consists of 7 tables: User, Profile, Location, Session, Content, Reaction, Reaction types.</br>
-Reaction, Content, and Reaction Types are our relevant data sets.
-We only need data that shows the `content ID`, `category`, `content type`, `reaction type`, and `reaction score` fields in order to answer the clients request for an analysis of their content categories showing the top 5 categories with the largest popularity measured by their score.
-As explained in the data model [file](https://github.com/CNormx/Accenture_analysis/tree/main/Social%20Buzz%20Briefs%20and%20Data%20Model), popularity is quantified by the score given to each `reaction type` which connect to the `reactions` table by the `type` field.
+Connectify's main database structure consists of 7 tables: User, Profile, Location, Session, Content, Reaction, Reaction types.</br>
+Our relevant datasets are Reaction, Content, and Reaction Types.
+To address the client's request for an analysis of their content categories—showing the top 5 categories with the largest popularity as measured by their score—we only need data that includes the `content ID`, `category`, `content type`, `reaction type`, and `reaction score` fields.
+As explained in the data model [file](https://github.com/CNormx/Accenture_analysis/tree/main/Social%20Buzz%20Briefs%20and%20Data%20Model), popularity is quantified by the score assigned to each `reaction type` which connects to the `reactions` table via the `type` field.
 
 A description of each table is as follows:
 - **Content:** Content
@@ -45,7 +43,7 @@ Datetime: The date and time of this reaction
 - **ReactionTypes:**
 Type: A string detailing the type of reaction this user gave</br>
 Sentiment: A string detailing whether this type of reaction is considered as positive, negative or neutral</br>
-Score: This is a number calculated by Social Buzz that quantifies how “popular” each reaction is. A reaction type with a higher score
+Score: This is a number calculated by Connectify that quantifies how “popular” each reaction is. A reaction type with a higher score
 should be considered as a more popular reaction.
 
 ![image](https://github.com/CNormx/Accenture_analysis/blob/main/Accenture%20erd.JPG)
