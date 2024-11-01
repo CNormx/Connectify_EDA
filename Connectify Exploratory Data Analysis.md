@@ -1,8 +1,8 @@
-# Social Buzz Exploratory Data Analysis
+# Connectify Exploratory Data Analysis
 
 **Analysis and Insights**
 
-First, I downloaded individual CSV files from the Accenture platform to obtain the `Content`, `Reactions`, and `ReactionTypes` tables. I then created the Social Buzz dataset in BigQuery and imported these tables into it. 
+First, I downloaded individual CSV files from the Accenture platform to obtain the `Content`, `Reactions`, and `ReactionTypes` tables. I then created the Connectify dataset in BigQuery and imported these tables into it. 
 
 ```sql
 CREATE TABLE IF NOT EXISTS "Accenture".content
