@@ -40,8 +40,8 @@ FROM `october-portfolio-project.Accenture.content` co
 		ON co.content_id = r.content_id
 	JOIN `october-portfolio-project.Accenture.reaction_types` rt
 		ON r.type = rt.type
-group by co.category
-order by total_score DESC
+GROUP BY co.category
+ORDER BY total_score DESC
 LIMIT 5;
 ```
 
@@ -50,14 +50,14 @@ LIMIT 5;
 ### How many reactions did the top category receive?
 
 ```sql
-SELECT co.category, sum(rt.score)as total_score, count(r.content_id) as num_reactions
+SELECT co.category, sum(rt.score)as total_score, count(r.content_id) AS num_reactions
 FROM `october-portfolio-project.Accenture.content` co
-	JOIN `october-portfolio-project.Accenture.reactions` as r
+	JOIN `october-portfolio-project.Accenture.reactions` r
 		ON co.content_id = r.content_id
 	JOIN `october-portfolio-project.Accenture.reaction_types` rt
 		ON r.type = rt.type
-group by co.category
-order by total_score DESC
+GROUP BY co.category
+ORDER BY total_score DESC
 LIMIT 1;
 ```
 
@@ -67,9 +67,9 @@ LIMIT 1;
 
 ```sql
 WITH type_scores as (
-SELECT co.category, r.type, SUM(rt.score) as total_score,
+SELECT co.category, r.type, SUM(rt.score) AS total_score,
 	RANK ()OVER(PARTITION BY co.category
-   ORDER BY SUM(rt.score) DESC) as rank
+   ORDER BY SUM(rt.score) DESC) AS rank
 FROM `october-portfolio-project.Accenture.content` co
 	JOIN `october-portfolio-project.Accenture.reactions` r
 		ON co.content_id = r.content_id
@@ -101,11 +101,11 @@ LIMIT 5;
 ### During which month were the most posts created?
 
 ```sql
-SELECT FORMAT_TIMESTAMP('%B', r.Datetime) AS month,EXTRACT(YEAR FROM r.Datetime) AS year, count(distinct co.content_id) as counts 
+SELECT FORMAT_TIMESTAMP('%B', r.Datetime) AS month,EXTRACT(YEAR FROM r.Datetime) AS year, count(distinct co.content_id) AS counts 
 FROM `october-portfolio-project.Accenture.content` co
 	LEFT JOIN `october-portfolio-project.Accenture.reactions` as r
 		ON co.content_id = r.content_id
-group by month, year
+GROUP BY month, year
 ORDER BY counts desc;
 ```
 
