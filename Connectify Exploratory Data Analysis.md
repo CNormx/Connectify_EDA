@@ -34,7 +34,7 @@ I approached the dataset with specific questions and a clear objective. My prima
 ### Obtain a distinct list of all categories
 
 ```sql
-SELECT co.category, sum(rt.score)as total_score
+SELECT co.category, sum(rt.score) AS total_score
 FROM `october-portfolio-project.Accenture.content` co
 	JOIN `october-portfolio-project.Accenture.reactions` r
 		ON co.content_id = r.content_id
@@ -50,7 +50,7 @@ LIMIT 5;
 ### How many reactions did the top category receive?
 
 ```sql
-SELECT co.category, sum(rt.score)as total_score, count(r.content_id) AS num_reactions
+SELECT co.category, sum(rt.score) AS total_score, count(r.content_id) AS num_reactions
 FROM `october-portfolio-project.Accenture.content` co
 	JOIN `october-portfolio-project.Accenture.reactions` r
 		ON co.content_id = r.content_id
@@ -66,7 +66,7 @@ LIMIT 1;
 ### Which reaction type has the highest total score for each category?
 
 ```sql
-WITH type_scores as (
+WITH type_scores AS (
 SELECT co.category, r.type, SUM(rt.score) AS total_score,
 	RANK ()OVER(PARTITION BY co.category
    ORDER BY SUM(rt.score) DESC) AS rank
