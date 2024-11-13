@@ -34,7 +34,7 @@ I approached the dataset with specific questions and a clear objective. My prima
 ### Obtain a distinct list of all categories
 
 ```sql
-SELECT co.category, sum(rt.score) AS total_score
+SELECT co.category, SUM(rt.score) AS total_score
 FROM `october-portfolio-project.Accenture.content` co
 	JOIN `october-portfolio-project.Accenture.reactions` r
 		ON co.content_id = r.content_id
@@ -50,7 +50,7 @@ LIMIT 5;
 ### How many reactions did the top category receive?
 
 ```sql
-SELECT co.category, sum(rt.score) AS total_score, count(r.content_id) AS num_reactions
+SELECT co.category, SUM(rt.score) AS total_score, COUNT(r.content_id) AS num_reactions
 FROM `october-portfolio-project.Accenture.content` co
 	JOIN `october-portfolio-project.Accenture.reactions` r
 		ON co.content_id = r.content_id
@@ -101,7 +101,7 @@ LIMIT 5;
 ### During which month were the most posts created?
 
 ```sql
-SELECT FORMAT_TIMESTAMP('%B', r.Datetime) AS month,EXTRACT(YEAR FROM r.Datetime) AS year, count(distinct co.content_id) AS counts 
+SELECT FORMAT_TIMESTAMP('%B', r.Datetime) AS month,EXTRACT(YEAR FROM r.Datetime) AS year, COUNT(distinct co.content_id) AS counts 
 FROM `october-portfolio-project.Accenture.content` co
 	LEFT JOIN `october-portfolio-project.Accenture.reactions` as r
 		ON co.content_id = r.content_id
