@@ -18,7 +18,7 @@ The functions and actions performed in Google Sheets to inspect and clean the da
 
 Targeted SQL queries addressing various business questions are available [here](https://github.com/CNormx/Connectify_EDA/blob/main/Connectify%20Exploratory%20Data%20Analysis.md).
 
-A Looker Studio dashboard for reporting and exploring categorical trends can be accessed [here](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/Accenture_Charts_for_Connectify.pdf).
+A Looker Studio dashboard for reporting and exploring categorical trends can be accessed [here](https://lookerstudio.google.com/s/p3DaNUq1luw).
 
 
 
@@ -53,6 +53,8 @@ should be considered as a more popular reaction.
 ### Overview of Findings
 
 The top 5 user post categories were clearly defined and displayed Animals in the top spot with 1,897 posts. This accounted for 21.4% of the top 5 category popularity. Analysis of the reaction patterns across categories revealed distinct preferences which indicated the highest level of user engagement and emotional response. The following sections will explore additional views into the post categories showcasing features that resonate most strongly with our user base, while simultaneously highlighting areas primed for optimization to drive increased engagement and user satisfaction.</br>
+
+[Link to Dashboard](https://lookerstudio.google.com/s/p3DaNUq1luw)
 
 ![image](https://github.com/CNormx/Connectify_EDA/blob/main/Looker%20Studio%20Dashboard/Connectify%20Dashboard%202.jpg)  
 
